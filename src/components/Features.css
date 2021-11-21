@@ -1,0 +1,36 @@
+.feature {
+    background: #6a50ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2em 5em;
+    height: 16em;
+    margin-bottom: 140px;
+    color: white;
+    margin-top: 70px;
+}
+
+.feature .feature-desc {
+    max-width: 650px;
+}
+
+.feature .feature-desc h2 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(1, 250, 167)
+}
+
+.feature img {
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: -67.1px 62.5px 125px -25px rgb(9 9 14 / 86%), -16.2px 37.5px 75px -37.5px rgb(6 12 34 / 27%);
+    transform: scale(1) perspective(1000px) rotateX(15deg) rotateY(23deg) rotate(-9.8deg) translateX(-15px) translateY(-80px);
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #161b22;
+    min-width: fit-content;
+}
+
+div {
+    display: block;
+}
+
+.full {
+    padding: 0 200px;
+}
+
+.center-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    font-size: 1.5em;
+    color: white;
+}
+
+.info-content {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.info-content h1 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+.invite_me-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+    background: rgb(139, 20, 236);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    margin: 20px 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in;
+    transition-property: transform;
+}
+
+.invite_me-btn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+
+.invite_me-btn i {
+    color: white;
+    font-size: 2rem;
+}
+
+.invite_me-btn:hover {
+    transform: scale(1.1);
+}
+
+span {
+    color: orange;
+}
+
+.getting-started {
+    width: 100%;
+    padding: 80px;
+    transform: translateX(-50%, -50%);
+}
+
+.getting-started h1 {
+    color: thistle;
+    font-size: 3rem;
+    padding: 0px 20px;
+    margin-bottom: 100px;
+    margin-left: 35%;
+}
+
+.getting-started video {
+    border-radius: 5px;
+    box-shadow: 0 15px 20px #453f66;
+    margin-left: 36%;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+@media screen and (min-width: 1024px) {
+    .info-content {
+        font-size: 2rem;
+    }
+
+    .info-content a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .getting-started {
+        display: none;
+    }
+    
+    .info-content {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .info-content a {
+        font-size: 1.5rem;
+    }
+}
